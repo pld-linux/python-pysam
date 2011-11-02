@@ -3,7 +3,7 @@ Summary:	Python module for reading and manipulating Samfiles
 #Summary(pl.UTF-8):	-
 Name:		python-%{module}
 Version:	0.5
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://pysam.googlecode.com/files/%{module}-%{version}.tar.gz
@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc THANKS
+%dir %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}/*.py[co]
 %attr(755,root,root) %{py_sitedir}/*.so
 %if "%{py_ver}" > "2.4"
