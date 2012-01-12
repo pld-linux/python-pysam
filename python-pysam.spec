@@ -2,12 +2,12 @@
 Summary:	Python module for reading and manipulating Samfiles
 #Summary(pl.UTF-8):	-
 Name:		python-%{module}
-Version:	0.5
-Release:	2
+Version:	0.6
+Release:	1
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://pysam.googlecode.com/files/%{module}-%{version}.tar.gz
-# Source0-md5:	6e20c0f0bfd1cd09ee60503042b6746f
+# Source0-md5:	395f59d7b765d9f625f6d82fce905dc7
 URL:		http://code.google.com/p/pysam/
 # remove BR: python-devel for 'noarch' packages.
 BuildRequires:	python-devel
