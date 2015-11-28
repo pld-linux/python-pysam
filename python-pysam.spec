@@ -31,16 +31,11 @@ It's a lightweight wrapper of the samtools C-API.
 %{__sed} -i -e '1s,^#!.*python,#!%{__python},' tests/*.py
 
 %build
-CC="%{__cc}" \
-CFLAGS="%{rpmcflags}" \
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
 %py_comp $RPM_BUILD_ROOT%{py_sitedir}
