@@ -3,7 +3,7 @@ Summary:	Python module for reading and manipulating Samfiles
 #Summary(pl.UTF-8):	-
 Name:		python-%{module}
 Version:	0.6
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://pysam.googlecode.com/files/%{module}-%{version}.tar.gz
